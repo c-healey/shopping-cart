@@ -38,14 +38,15 @@ class App extends Component {
                   <div className="shop">
                     <Products products={this.state.products} />
                   </div>
-                  {/* <div className="cart d-none">
-                    <Cart Format="ROW"  />
-                  </div> */}
+                  
+                    <Cart Format="FULLWIDTH"  />
+                  
                 </Col>
               </Row>
             </Container>
           </Jumbotron>
           <Cart Format="SIDEBAR" />
+          
         </CartProvider>
       </LoggedInProvider>
     );
